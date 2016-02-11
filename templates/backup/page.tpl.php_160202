@@ -1,0 +1,141 @@
+<div id="page">
+	<div class="container-fluid">
+		<div class="row">
+			<?php if($is_front): ?>
+				<header id="header-main" style="background-image: url(<?php print $front_page; ?>/sites/default/files/images/start.png)"  role="banner">
+			<?php else: ?>
+				<header id="header-sub" style="background-image: url(<?php print $front_page; ?>/sites/default/files/images/other.png)"  role="banner">
+			<?php endif; ?>
+				<div class="row">
+					<div id="logo" class="col-sm-6">
+	                                        <?php if ($logo): ?><div id="site-logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="logo-img img-responsive"/></a><?php endif; ?>
+	                                                <h1 id="site-title">
+	                                                        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+	                                                </h1>
+	                                        </div>
+					</div>
+	                                <div id="search" col-sm-6">
+	                                        <?php if ($page['navigation']): ?><div class="navigation"><?php print render($page['navigation']); ?></div><?php endif; ?>
+	                                </div>  
+				</div>
+				<div class="navs">
+                                	<div class="container">
+                                        	<nav class="navbar navbar-default">
+                                        	        <div class="container-fluid container-fluid-menu">
+                                        	                <div class="navbar-header">
+                                        	                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                        	                                <span class="icon-bar"></span>
+                                        	                                <span class="icon-bar"></span>
+                                                                        <span class="icon-bar"></span>
+                                        	                        </button>
+                                        	                        <a class="navbar-brand" href="#"></a>
+                                        	                </div>
+                                        	                <div class="collapse navbar-collapse" id="myNavbar">
+                                        	                        <?php
+                                        	                                $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+                                        	                                print drupal_render($main_menu_tree);
+                                        	                        ?>
+	
+	                                                                <ul class="nav navbar-nav navbar-right">
+	                                                                        <li class="dropdown">
+	                                                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">KOMMUNER<span class="caret"></span></a>
+	                                                                                <ul class="dropdown-menu">
+	                                                                                <?php
+	                                                                                        $kommuner_menu_tree = menu_tree(variable_get('menu_kommuner_links_source', 'menu-kommuner'));
+	                                                                                        print drupal_render($kommuner_menu_tree);
+	                                                                                ?>
+	                                                                                </ul>
+	                                                                        </li>
+	                                                                </ul>
+	                                                        </div>
+	                                                </div>
+	                                        </nav>
+					</div>
+	                        </div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="container">
+							<?php if ($page['slogan']): ?><div class="slogan"><?php print render($page['slogan']); ?></div><?php endif; ?>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="primary" class="content-area" role="main">
+<section>
+				<?php print $messages; ?>
+				<?php if($is_front): ?>
+	    				<div class="col-md-9">
+						<section>
+                                        	        <?php if ($page['header']): ?><div id="top_bar"><?php print render($page['header']); ?></div><?php endif; ?>
+                                        	        <div id="content-wrap">
+                                        	                <?php print render($title_prefix); ?>
+                                        	                <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
+                                        	                <?php print render($title_suffix); ?>
+                                        	                <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
+                                        	                <?php print render($page['help']); ?>
+                                        	                <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+                                        	                <?php print render($page['content']); ?>
+                                        	        </div>
+	                                        </section>
+					</div>
+	    				<div class="col-md-2">
+                                        	<aside>
+                                       	                <?php if ($page['sidebar_first']): ?><?php print render($page['sidebar_first']); ?><?php endif; ?>
+                                        	</aside>
+					</div>
+	    				<div class="col-md-1">
+	    				</div>
+				<?php else: ?>
+	    				<div class="col-md-1">
+	    				</div>
+	    				<div class="col-md-2">
+                                        	<aside>
+                                       	                <?php if ($page['sidebar_second']): ?><?php print render($page['sidebar_second']); ?><?php endif; ?>
+                                        	</aside>
+					</div>
+	    				<div class="col-md-9">
+						<section>
+	        	                                <?php if ($page['header']): ?><div id="top_bar"><?php print render($page['header']); ?></div><?php endif; ?>
+	                	                        <div id="content-wrap">
+	                        	                        <?php print render($title_prefix); ?>
+	                        	                        <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
+	                        	                        <?php print render($title_suffix); ?>
+	                        	                        <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
+	                        	                        <?php print render($page['help']); ?>
+	                        	                        <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+	                        	                        <?php print render($page['content']); ?>
+	                        	                </div>
+						</section>
+					</div>
+				<?php endif; ?>
+</section>
+			</div>
+		</div>
+	</div>
+	<div id="container-fluid">
+		<div class="container footers">
+			<div class="row">
+				<div class="col-md-4 col-md-push-8">
+					<?php print render($page['footer_third']); ?>
+				</div>
+				<div class="col-md-4 col-md-pull-4">
+					<?php print render($page['footer_first']); ?>
+				</div>
+				<div class="col-md-4 col-md-pull-4">
+					<?php print render($page['footer_second']); ?>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<footer id="footer-main">
+				<div class="col-md-12">
+					<?php print render($page['footer']); ?>
+				</div>
+			</footer>
+		</div>
+	</div>
+</div>

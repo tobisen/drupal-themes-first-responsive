@@ -1,0 +1,78 @@
+<div id="page">
+	<?php if($is_front): ?>
+		<header id="header-main" style="background-image: url(<?php print $front_page; ?>/sites/default/files/images/start.png)"  role="banner">
+	<?php else: ?>
+		<header id="header-sub" style="background-image: url(<?php print $front_page; ?>/sites/default/files/images/other.png)"  role="banner">
+	<?php endif; ?>
+		<div class="container">
+	                <div class="row">
+                        	<div id="logo" col-sm-6">
+                                	<?php if ($logo): ?><div id="site-logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="logo-img img-responsive"/></a></div><?php endif; ?>
+                                		<h1 id="site-title">
+                                        		<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+                                		</h1>
+                        		</div>
+				</div>
+			</div>
+			<div class="navs">
+				<div class="container">
+					<nav class="navbar navbar-default">
+  						<div class="container-fluid">
+    							<div class="navbar-header">
+      								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       		 							<span class="icon-bar"></span>
+        								<span class="icon-bar"></span>
+        								<span class="icon-bar"></span>                        
+      								</button>
+    							</div>
+    							<div class="collapse navbar-collapse" id="myNavbar">
+								<?php
+									$main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+							              	print drupal_render($main_menu_tree);
+								?>
+
+							      	<ul class="nav navbar-nav navbar-right">
+        								<li class="dropdown">
+          									<a class="dropdown-toggle" data-toggle="dropdown" href="#">KOMMUNER<span class="caret"></span></a>
+          									<ul class="dropdown-menu">
+										<?php
+											$kommuner_menu_tree = menu_tree(variable_get('menu_kommuner_links_source', 'menu-kommuner'));
+							              			print drupal_render($kommuner_menu_tree);
+										?>
+          									</ul>
+        								</li>
+      								</ul>
+    							</div>
+  						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div id="primary" class="content-area col-sm-12">
+			<section>
+				<?php print $messages; ?>
+				<?php if($is_front): ?>
+					<aside id="aside-right">
+				<?php else: ?>
+					<aside id="aside-left">
+				<?php endif; ?>
+		slask<br />
+				</aside>
+		
+				<?php if($is_front): ?>
+					<section id="section-left" role="main" class="clearfix">
+				<?php else: ?>
+					<section id="section-right" role="main" class="clearfix">
+				<?php endif; ?>
+				
+		slask<br />
+				</section>
+			</section>
+		</div>
+	</div>
+	<footer>
+		footer
+	</footer>
+</div>

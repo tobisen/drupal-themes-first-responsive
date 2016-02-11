@@ -1,0 +1,532 @@
+/* Reset
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, st$
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+#page {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: #3F3C37 !important;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container-fluid {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+/*	background: #fff; */
+}
+
+.container-fluid.main-container {
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+	background: #fff;
+}
+
+.container-fluid.header-container {
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+	background: none;
+}
+
+.container-fluid.container-fluid-menu {
+	margin-left: -50px !important;
+	margin-right: -32px !important;
+	background-color: rgba(255,255,255,0.3) !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
+/* Header
+==================================*/
+header {
+        color: #fff;
+        background-size: 100% 100%;
+	padding: 15px;
+	position: relative;
+    	top: 0;
+}
+
+.header-sub {
+        height: 200px;
+}
+
+#myNavbar {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.header-row {
+	margin-top: 15px;
+}
+
+.faded {
+	background-color:rgba(255,255,255,0.4) !important;
+	margin-left: -15px;
+	margin-top: -15px;
+}
+
+#site-logo {
+        float: left;
+	margin-left: -5px;
+}
+
+#search {
+        float: right;
+}
+
+#contacted {
+        float: right;
+	margin-right: 5px;
+}
+
+h1#site-title{
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 18px;
+}
+
+h1#site-title a:link, h1#site-title a:visited{
+        color: #000;
+}
+
+.dropdown-menu {
+        poistion: relative !important;
+}
+
+.nav {
+        z-index: 1000 !important;
+        position: relative;
+}
+
+.nav > li > a {
+        color: #fff;
+        background: #222;
+}
+
+li > a.active {
+        color: #FFF !important;
+        background: #222 !important;
+}
+
+li > a:hover {
+        outline: 2px solid #000;
+        background: transparent !important;
+}
+
+.navs {
+/*	background-color:rgba(255,255,255,0.3) !important;
+	opacity: 0.5;
+*/        width:100%;
+        height: 50px;
+        text-transform: uppercase;
+        z-index: 1000 !important;
+        position: relative;
+	top: 33px !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default {
+/*        height: 2px !important; */
+	background: transparent !important;
+	color: #000 !important;
+	border-color: transparent !important;
+}
+
+/*.navbar-default .navbar-collapse, .navbar-default .navbar-form, .navbar-nav .open .dropdown-menu {*/
+.navbar-form, .navbar-nav .open .dropdown-menu {
+/* .dropdown-menu { */
+    	background: #222 !important; 
+	border: 0px !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+	background: transparent !important;
+        color: #000 !important;
+	font-weight: 600;
+	font-size: 120%;
+}
+
+.navbar-default .navbar-nav {
+/*	background-color: rgba(255,255,255,0.7) !important; */
+	color: #000 !important;
+}
+
+.navbar-collapse {
+/*	background-color: rgba(255,255,255,0.7) !important;*/
+	color: #000 !important;
+}
+
+.navbar-default .navbar-brand {
+    	padding-left: 35px;
+	font-weight: 600;
+	font-size: 120%;
+}
+
+.slogan {
+	background-color:rgba(255,255,255,0.4);
+	padding-bottom: 20px;
+	margin-top: 80px;
+	-moz-border-radius: 150px;    /* Firefox 3.6-, removed in Firefox 13 */
+	-webkit-border-radius: 150px; /* Safari 4-, Chrome 3- */
+	border-radius: 150px;     /* Firefox 4+, Safari 5+, Chrome 4+, Opera 10.5+, IE9+ */
+	border: 0px solid #fff !important;
+	font-weight: bold;
+  	color: #000;
+}
+
+.input-group {
+	max-width: 200px;
+}
+
+/* Content
+==================================*/
+#content {
+	background: #fff;
+}
+
+/* Section
+==================================*/
+section {
+	background: #fff;
+	padding: 15px;
+}
+
+/* Aside
+==================================*/
+aside {
+	background: #F5F6F7;
+	padding: 15px;
+}
+
+/* Footer
+==================================*/
+#footer {
+	background: #3F3C37;
+	padding: 30px 30px 30px 30px;
+        color:white;
+	margin-bottom: 15px;
+}
+
+#footer .block-title {
+	font-weight: bold;
+}
+
+/* Left Menu
+================================================== */
+.menu-left-content div {
+/*    display:none; */
+}
+
+.menu-left {
+    border-bottom: 1px solid lightgrey;
+    padding-left: 5px;
+    width: 100%;
+    display: block;
+}
+
+.menu-left-div {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+.menu-display {
+	display: block !important;
+}
+
+.menu-left-link-header {
+
+}
+
+.menu-links {
+
+}
+
+a.menu-left-link {
+
+}
+
+.menu-right:before {
+	margin-left: 5px; content: '\25BA';
+}
+
+.menu-down:before {
+	margin-left: 5px; content: '\25BC';
+}
+
+/*
+.menu-left li.menu-left-content:before { margin-left: 5px; content: '\25BA'; }
+.menu-left li.active:before { margin-left: 5px; content: '\25BC'; }
+*/
+
+/* Pages
+================================================== */
+.page-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+}
+
+.field-name-field-ingress {
+        font-size: 150%;
+        margin-bottom: 20px;
+}
+
+.field-type-text-with-summary {
+        border-bottom: 2px solid #222;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+}
+
+.field-name-field-l-stips {
+        display: table-cell;
+        padding-right: 100px;
+        padding-bottom: 20px;
+}
+
+.field-name-field-l-nktips {
+        display: table-cell;
+        padding-bottom: 20px;
+}
+
+div.field:nth-child(4) > div:nth-child(2) a:nth-child(1):before {
+	font-family: "Glyphicons Halflings";
+	margin-right: 5px;
+	content: '\e144';
+}
+
+/* Block
+================================================== */
+#block-block-7 {
+	margin-bottom: 20px;
+}
+
+.region-sidebar-first {
+	border: 0px !important;
+}
+
+.region-sidebar-first .block{
+	border-bottom: 1px solid #e3e3e3;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+.footer-links {
+	color: #FDDC39 !important;
+}
+
+/* Images
+================================================== */
+.front_sub {
+	max-width: 75px !important;
+}
+
+.flag {
+	max-width: 50px;
+}
+
+/* Buttons
+================================================== */
+.btn-energi {
+	background-color: #FDDC39 !important;
+	border: 1px solid grey !important;
+}
+
+.btn {
+	border: 1px solid grey !important;
+}
+
+/* Contact form
+================================================== */
+#block-formblock-contact-site > h2:nth-child(1) {
+	font-size: 19px;
+	font-weight: bold;
+}
+
+#contact-site-form #edit-mail, #edit-name, #edit-tel {
+	width: 100%;
+	max-width: 300px;
+	color: lightgrey;	
+	font-style: italic;
+	background-color: #7f7f7f;
+}
+
+#edit-mail:before {
+	content: "slask";
+}
+
+#edit-submit--2 {
+        background-color: #FDDC39 !important;
+        border: 1px solid grey !important;
+	width: 100%;
+	max-width: 300px;
+}
+
+/* Media resizing
+================================================== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+        .header-main {
+                height: 200px;
+        }
+        .slogan {
+                visibility: hidden;
+        }
+	.navbar-brand {
+		visibility: visible;
+	}
+	.navbar-header {
+		background-color: #222 !important;
+	    	color: #000 !important;
+	}
+	.input-group {
+		max-width: 150px;
+	}
+	.container-fluid.container-fluid-menu {
+    		background-color: rgba(65,65,65,0.8) !important;
+		color: #000 !important;
+	}
+	.navbar-default .navbar-nav > li > a {
+    		color: #ffffff !important;
+	}
+	#myNavbar {
+		margin-right: 0px !important;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+        .header-main {
+                height: 200px;
+        }
+        .slogan {
+                visibility: hidden;
+        }
+	.navbar-brand {
+		visibility: visible;
+	}
+	.navbar-header {
+		background-color: #222 !important;
+	}
+	.input-group {
+		max-width: 150px;
+	}
+	.container-fluid.container-fluid-menu {
+    		background-color: rgba(65,65,65,0.8) !important;
+	}
+	.navbar-default .navbar-nav > li > a {
+    		color: #ffffff !important;
+	}
+	#myNavbar {
+		margin-right: 0px !important;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+        .header-main {
+                height: 300px;
+        }
+
+        .slogan {
+                visibility: hidden;
+        }
+	.navbar-brand {
+		visibility: hidden;
+		width: 0px !important;
+	}
+	.navbar-header {
+		background-color: transparent !important;
+	}
+	.container-fluid.container-fluid-menu {
+	        background-color: rgba(255,255,255,0.3) !important;
+	}
+	.navbar-default .navbar-nav > li > a {
+    		color: #000 !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+        .header-main {
+                height: 400px;
+        }
+        .slogan {
+                visibility: visible;
+        }
+	.navbar-brand {
+		visibility: hidden;
+		width: 0px !important;
+	}
+	.container-fluid.container-fluid-menu {
+	        background-color: rgba(255,255,255,0.3) !important;
+	}
+	.navbar-default .navbar-nav > li > a {
+    		color: #000 !important;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+        .header-main {
+                height: 500px;
+        }
+        .slogan {
+                visibility: visible;
+        }
+	.navbar-brand {
+		visibility: hidden;
+		width: 0px !important;
+	}
+	.navbar-header {
+		background-color: transparent !important;
+	}
+	.container-fluid.container-fluid-menu {
+	        background-color: rgba(255,255,255,0.3) !important;
+	}
+	.navbar-default .navbar-nav > li > a {
+    		color: #000 !important;
+	}
+}
+

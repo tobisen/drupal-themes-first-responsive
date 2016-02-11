@@ -1,0 +1,243 @@
+/* Reset
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, st$
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Head
+================================================== */
+header { 
+    	color: #fff;
+	height: 150px; 
+	background-size: 100% 100%;
+}
+
+#header-sub {
+	height: 200px;
+}
+
+#site-logo {
+        float: left;
+        padding: 25px 25px 25px 25px;
+}
+
+#search {
+        float: right;
+        padding: 25px 25px 25px 25px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+}
+
+h1#site-title{
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 18px;
+}
+
+h1#site-title a:link, h1#site-title a:visited{
+        color: #000;
+}
+
+.dropdown-menu {
+	poistion: relative !important;
+	background: white !important;
+	opacity: 1.0 !important;
+}
+
+.nav {
+	z-index: 1000 !important;
+	position: relative;
+	opacity: 1.0;
+}
+
+.navs {
+        background-color: #222;
+        width:100%;
+        height: 50px;
+        opacity: 0.5;
+        text-transform: uppercase;
+        z-index: 1000 !important;
+        position: relative;
+}
+
+/* Sections
+================================================== */
+section {
+	position: relative;
+    	float:left;
+	background: #ffff;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	z-index: 1;
+}
+
+#section-right {
+        float:right;
+        width: 75%;
+        min-height: 640px;
+}
+
+#section-left {
+        float:left;
+        padding-top: 15px;
+        width: 75%;
+        min-height: 640px;
+}
+
+/* Aside
+================================================== */
+#aside-left {
+        width: 20%;
+        float: left;
+        background: #F5F6F7;
+        min-height: 640px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        leftt: 0px;
+}
+
+#aside-right {
+        width: 20%;
+        float: right;
+        background: #F5F6F7;
+        min-height: 640px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+}
+
+/* Blocks
+================================================== */
+.alert-info {
+        height: 40px;
+}
+
+#block-block-6 {
+        background: #F5F6F7;
+}
+
+#block-block-7 {
+        background-color: #3F3C37;
+}
+
+section#block-block-8, section#block-search-form {
+        background: none !important;
+}
+
+#block-block-4 {
+        color: #000;
+        border-bottom: 2px solid #3F3C37;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+.footer-block {
+        margin-bottom: 30px;
+}
+
+.footer-block{
+        color: #aaa;
+}
+
+.footer-block .block > h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 10px 0px;
+        color:#fff;
+        text-transform: uppercase;
+}
+
+/* Footer
+================================================== */
+#footer-main {
+        background-color: #3F3C37;
+        color:white;
+        clear:both;
+        text-align:center;
+        padding:5px;
+        width: 100%;
+}
+
+section > footer {
+        opacity: 0.0;
+}
+
+/* Media resizing
+================================================== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+        #header-main {
+                height: 200px;
+        }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+        #header-main {
+                height: 200px;
+        }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+        #header-main {
+                height: 300px;
+        }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+        #header-main {
+                height: 400px;
+        }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+        #header-main {
+                height: 500px;
+        }
+}

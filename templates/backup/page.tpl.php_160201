@@ -1,0 +1,60 @@
+<div id="page">
+	<div class="container-fluid">
+		<div class="row">
+			<?php if($is_front): ?>
+				<header id="header-main" style="background-image: url(<?php print $front_page; ?>/sites/default/files/images/start.png)"  role="banner">
+			<?php else: ?>
+				<header id="header-sub" style="background-image: url(<?php print $front_page; ?>/sites/default/files/images/other.png)"  role="banner">
+			<?php endif; ?>
+			</header>
+		</div>
+	</div>
+	<div class="container-fluid table-container">
+		<div class="row table-row">
+			<div id="primary" class="content-area" role="main">
+				<?php print $messages; ?>
+				<?php if($is_front): ?>
+	    				<div class="col-md-9 table-col">
+				<?php else: ?>
+	    				<div class="col-md-9 col-md-push-3 table-col">
+				<?php endif; ?>
+        				<div class="alert alert-info">A</div>
+					<section>
+	                                        <?php if ($page['header']): ?><div id="top_bar"><?php print render($page['header']); ?></div><?php endif; ?>
+	                                        <div id="content-wrap">
+	                                                <?php print render($title_prefix); ?>
+	                                                <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
+	                                                <?php print render($title_suffix); ?>
+	                                                <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
+	                                                <?php print render($page['help']); ?>
+	                                                <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+	                                                <?php print render($page['content']); ?>
+	                                        </div>
+					</section>
+    				</div>
+				<?php if($is_front): ?>
+	    				<div class="col-md-2 table-col">
+				<?php else: ?>
+	    				<div class="col-md-2 col-md-pull-8 table-col">
+				<?php endif; ?>
+        				<div class="alert alert-danger">B</div>
+					<aside>
+	                                        <?php if($is_front): ?>
+	                                                <?php if ($page['sidebar_first']): ?><?php print render($page['sidebar_first']); ?><?php endif; ?>
+	                                        <?php else: ?>
+	                                                <?php if ($page['sidebar_second']): ?><?php print render($page['sidebar_second']); ?><?php endif; ?>
+	                                        <?php endif; ?>
+					</aside>
+    				</div>
+    				<div class="col-md-1 table-col">
+    				</div>
+			</div>
+		</div>
+	</div>
+	<div id="container-fluid">
+		<div class="row">
+			<footer id="footer-main">
+			</footer>
+		</div>
+	</div>
+</div>

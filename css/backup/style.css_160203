@@ -1,0 +1,304 @@
+/* Reset
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, st$
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+#page {
+	overflow-x: hidden;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: #3F3C37 !important;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container-fluid {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	background: #fff;
+}
+
+.container-fluid.main-container {
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+	background: #fff;
+}
+
+.container-fluid.header-container {
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+	background: none;
+}
+
+.container-fluid.container-fluid-menu {
+	margin-left: -32px !important;
+	margin-right: -32px !important;
+}
+
+/* Header
+==================================*/
+header {
+        color: #fff;
+        background-size: 100% 100%;
+	padding: 15px;
+	position: relative;
+    	top: 0;
+}
+
+.header-sub {
+        height: 200px;
+}
+
+#site-logo {
+        float: left;
+	margin-left: -15px;
+}
+
+#search {
+        float: right;
+}
+
+h1#site-title{
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 18px;
+}
+
+h1#site-title a:link, h1#site-title a:visited{
+        color: #000;
+}
+
+.dropdown-menu {
+        poistion: relative !important;
+}
+
+.nav {
+        z-index: 1000 !important;
+        position: relative;
+}
+
+.nav > li > a {
+        color: #fff;
+        background: #222;
+}
+
+li > a.active {
+        color: #FFF !important;
+        background: #222 !important;
+}
+
+li > a:hover {
+        outline: 2px solid #000;
+        background: transparent !important;
+}
+
+.navs {
+//	background-color:rgba(63,60,65,0.3) !important;
+        background-color: #222;
+        width:100%;
+        height: 50px;
+        opacity: 0.5;
+        text-transform: uppercase;
+        z-index: 1000 !important;
+        position: relative;
+	top: 33px !important;
+}
+
+.navbar-default {
+        height: 2px !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form, .navbar-nav .open .dropdown-menu {
+    border-color: #121212;
+    background: #222 !important;
+}
+
+.slogan {
+	background-color:rgba(0,0,0,0.4);
+	padding-bottom: 20px;
+	margin-top: 50px;
+	-moz-border-radius: 150px;    /* Firefox 3.6-, removed in Firefox 13 */
+	-webkit-border-radius: 150px; /* Safari 4-, Chrome 3- */
+	border-radius: 150px;     /* Firefox 4+, Safari 5+, Chrome 4+, Opera 10.5+, IE9+ */
+	border: 1px solid #F5F6F7;
+	font-weight: bold;
+  	color: #FFF;
+}
+
+
+/* Content
+==================================*/
+#content {
+	background: #fff;
+}
+
+/* Section
+==================================*/
+section {
+	background: #fff;
+	padding: 15px;
+}
+
+/* Aside
+==================================*/
+aside {
+	background: #F5F6F7;
+	padding: 15px;
+}
+
+/* Footer
+==================================*/
+#footer {
+	background: #3F3C37;
+	padding: 30px;
+        color:white;
+        text-align:center;
+}
+
+/* Left Menu
+================================================== */
+.menu-left-content div {
+    display:none;
+}
+
+.menu-left {
+    border-bottom: 1px solid lightgrey;
+    padding-left: 5px;
+    width: 100%;
+    display: block;
+}
+
+.menu-left-div {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+.menu-links {
+
+}
+
+a.menu-left-link {
+
+}
+
+.menu-left li.menu-left-content:before { margin-left: 5px; content: '\25BA'; }
+.menu-left li.active:before { margin-left: 5px; content: '\25BC'; }
+
+/* Pages
+================================================== */
+.page-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+}
+
+.field-name-field-ingress {
+        font-size: 150%;
+        margin-bottom: 20px;
+}
+
+.field-type-text-with-summary {
+        border-bottom: 2px solid #222;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+}
+
+.field-name-field-l-stips {
+        display: table-cell;
+        padding-right: 100px;
+        padding-bottom: 20px;
+}
+
+.field-name-field-l-nktips {
+        display: table-cell;
+        padding-bottom: 20px;
+}
+
+/* Media resizing
+================================================== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+        .header-main {
+                height: 200px;
+        }
+        .slogan {
+                visibility: hidden;
+        }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+        .header-main {
+                height: 200px;
+        }
+        .slogan {
+                visibility: hidden;
+        }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+        .header-main {
+                height: 300px;
+        }
+
+        .slogan {
+                visibility: hidden;
+        }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+        .header-main {
+                height: 400px;
+        }
+        .slogan {
+                visibility: visible;
+        }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+        .header-main {
+                height: 500px;
+        }
+        .slogan {
+                visibility: visible;
+        }
+}
+

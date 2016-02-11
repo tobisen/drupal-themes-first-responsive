@@ -1,0 +1,53 @@
+name = Energi
+description = An responsive theme based on bootstrap created for Energirådgivningen
+core = 7.x
+version = "7.x-0.1"
+base theme = bootstrap
+screenshot = logo.png
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Search'
+regions[contacted]     = 'Contacted'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[slogan]           = 'Slogan'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[under-content]        = 'Under Content'
+regions[sidebar_first]  = 'Sidebar right'
+regions[sidebar_second] = 'Sidebar left'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+regions[footer_first]    = 'Footer first'
+regions[footer_second]    = 'Footer second'
+regions[footer_third]    = 'Footer third'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/bootstrap.min.css
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+scripts[] = js/height.js
+scripts[] = js/clear-defaults.js
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Features
+;;;;;;;;;;;;;;;;;;;;;
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
